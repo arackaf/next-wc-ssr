@@ -1,7 +1,12 @@
-import '../styles/globals.css'
+import "../styles/globals.css";
+import "../shoelace.css";
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+if (typeof window === "object") {
+  import("../shoelace-bundle.js");
 }
 
-export default MyApp
+function MyApp({ Component, pageProps }) {
+  return <Component {...pageProps} />;
+}
+
+export default MyApp;

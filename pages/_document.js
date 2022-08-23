@@ -5,8 +5,8 @@ export default function Document() {
   return (
     <Html>
       <Head>
-        <link rel="stylesheet" href="/shoelace.css" />
-        <script src="/shoelace-bundle.js"></script>
+        {/* <link rel="stylesheet" href="/shoelace.css" /> */}
+        {/* <script src="/shoelace-bundle.js"></script> */}
       </Head>
       <body>
         <Main />
