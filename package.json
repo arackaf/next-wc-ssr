@@ -6,15 +6,18 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "bundle-shoelace": "vite build && node util/process-shoelace-bundle"
   },
   "dependencies": {
+    "@shoelace-style/shoelace": "^2.0.0-beta.81",
     "next": "12.2.5",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
   "devDependencies": {
     "eslint": "8.22.0",
-    "eslint-config-next": "12.2.5"
+    "eslint-config-next": "12.2.5",
+    "vite": "^3.0.7"
   }
 }
