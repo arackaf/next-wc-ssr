@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
@@ -14,6 +14,9 @@ export default function Home() {
     }
   }, []);
 
+  const [val, setVal] = useState(0);
+  const [active, setActive] = useState(true);
+
   return (
     <div className={styles.container}>
       <Head>
@@ -27,13 +30,15 @@ export default function Home() {
           Hello world
         </div>
         <br />
+        <button onClick={() => setVal((x) => x + 1)}> {val}</button>
+        <button onClick={() => setActive((act) => !act)}>Toggle Active. Current: {active.toString()}</button>
         <br />
         <div style={{ width: "700px" }}>
           <sl-tab-group>
             <sl-tab slot="nav" panel="general">
               General
             </sl-tab>
-            <sl-tab slot="nav" panel="custom">
+            <sl-tab slot="nav" panel="custom" active={active}>
               Custom
             </sl-tab>
             <sl-tab slot="nav" panel="advanced">
