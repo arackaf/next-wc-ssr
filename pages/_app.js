@@ -1,3 +1,4 @@
+import "@shoelace-style/shoelace/dist/themes/light.css";
 import "../styles/globals.css";
 
 if (typeof window === "object" && !/localhost/.test(location.href) && "serviceWorker" in navigator) {

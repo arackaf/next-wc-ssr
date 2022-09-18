@@ -1,1 +1,1 @@
-export const shoelacePath = "/shoelace/shoelace-bundle-544c42bc.js";
+export const shoelacePath = "/shoelace/shoelace-bundle-a6f19317.js";
