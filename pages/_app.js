@@ -1,7 +1,6 @@
 import "@shoelace-style/shoelace/dist/themes/light.css";
 import "../styles/globals.css";
 
-/*
 if (typeof window === "object" && !/localhost/.test(location.href) && "serviceWorker" in navigator) {
   navigator.serviceWorker
     .register("/sw.js")
@@ -12,7 +11,6 @@ if (typeof window === "object" && !/localhost/.test(location.href) && "serviceWo
       console.log("Error registering service worker", err);
     });
 }
-*/
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />;
