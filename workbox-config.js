@@ -18,8 +18,5 @@ const getCache = ({ name, pattern }) => ({
 
 module.exports = {
   swDest: "public/sw.js",
-  runtimeCaching: [
-    getCache({ pattern: /shoelace.*\.css/i, name: "shoelace-styles" }),
-    getCache({ pattern: /shoelace-bundle.*\.js/i, name: "shoelace-js" }),
-  ],
+  runtimeCaching: [getCache({ pattern: /shoelace-bundle.*\.js/i, name: "shoelace-js" })],
 };
