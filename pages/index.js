@@ -24,7 +24,8 @@ export default function Home() {
     const divs = ref.current.querySelectorAll(".txt");
     for (const div of divs) {
       // visually display client-side hydration
-      div.style.color = "purple";
+      div.textContent = "HYDRATED";
+      div.style.color = "green";
     }
 
     tabsRef.current.addEventListener("sl-tab-show", tabChanged);
@@ -49,8 +50,8 @@ export default function Home() {
       </Head>
 
       <main ref={ref} className={styles.main}>
-        <div style={{ fontSize: "32px", color: "green" }} className="txt">
-          Hello world
+        <div style={{ fontSize: "32px", color: "red" }} className="txt">
+          SSR Content
         </div>
 
         <div style={{ width: "700px" }}>
